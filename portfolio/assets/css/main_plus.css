@@ -1,0 +1,247 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*
+font-family: 'Nanum Gothic', sans-serif;
+*/
+
+
+
+/* Header */
+
+#logo {
+		left: 1.5em;
+		top: 0.5em;
+		font-weight:normal;
+		letter-spacing: 0;
+		font-size:0.8em;
+		color: #888;
+	}
+	
+	#logo a {
+		font-size:1em;
+	}
+	
+	#logo span {
+		font-size:1.5em;
+		color: #444;
+	}
+
+
+header.semi {
+	margin-bottom:0;
+}
+
+
+
+#nav {
+	right: 1.2em;
+}
+		#nav ul li a {
+			color:#999;
+		}
+		#nav ul li a:hover {
+			
+			color: #222;
+			
+		}
+
+
+
+
+/* Main */
+
+			
+		.main.style1 h2 {
+			background:url(../../images/img/text_bg.png) no-repeat center center;
+			background-size: 65% auto;
+			padding:1em 0;
+		}
+
+		.main.style1 h2 span{	
+			opacity:0;
+		}		
+		
+		.main.style1 .text_han {
+			font-family: 'Nanum Gothic', sans-serif;
+			font-weight:normal;
+			font-size: 0.85em;
+			margin-bottom: 4em;
+		}		
+		
+		.main.style2 p {
+			font-family: 'Nanum Gothic', sans-serif;
+			font-weight:normal;
+			font-size: 0.7em;
+			color:#777;
+		}
+		
+		.main.style2 p span.txt_bold {
+			font-size:1.1em;
+			font-weight:bold;
+			color:#465156;
+			border-bottom:1px solid #bbb;
+			
+		}
+		
+		
+		.main.style3 h2 {
+			letter-spacing:0;
+		}
+		
+		.main.style3 p {			
+		}
+		
+		.main.style3 p a.more {
+			background:url(../../images/img/btn.png) no-repeat center center;
+			background-size: auto 95%;
+			display:inline-block;
+			padding: 0 5%;					
+		}
+		
+		.main.style3 p a.more:hover {
+			background:url(../../images/img/btn_hover.png) no-repeat center center;
+			background-size: auto 95%;
+		}
+		
+		.main.style3 p a.more span {
+			opacity:0;	
+		}
+		
+		.main.style3 p.email span {
+			color:rgba(57, 69, 75, 0.3);
+			font-weight:bold;
+		}
+			
+		.main.style3 p.email a {
+			color:#39454b;
+			text-decoration:none;
+			border-bottom:1px solid #d6dadb;
+		}
+		
+		.main.style3 p.email a:hover {
+			color:#f36211;
+			background-color:#f8f7be;
+		}
+
+/* Image */
+
+	.image {
+		background-color:#f5f6f7;
+		
+	}
+
+		.image:before {
+			opacity:0;
+			
+		}
+		
+				
+		.image img {			
+			opacity:0.6;
+		}
+		
+		.image:hover img {
+			opacity:1;
+								
+		}
+		
+/* Contact */		
+		
+header {
+		
+	}
+
+		header p {
+			
+			margin: 1em 0 5em 0;
+		}		
+
+
+/* Footer */
+
+	#footer {
+		
+		text-align:center;
+		
+	}
+	
+		#footer p {
+			line-height:0.5em;
+			font-size:0.6em;
+			color: rgba(185, 186, 187, 0.15);
+		}
+		
+		#footer p.copy_eun {
+			margin-top:2em;
+			font-size:1em;
+			color: rgba(185, 186, 187, 0.45);
+		}
+		
+		#footer a {
+			color: #999;
+			color: rgba(185, 186, 187, 0.15);
+			text-decoration:none;
+			cursor:text;
+		}
+
+			#footer a:hover {
+				color: rgba(185, 186, 187, 0.2);
+			}
+		
+
+
+/* Wide */
+
+	@media screen and (max-width: 1920px) {
+	}
+
+/* Normal */
+
+	@media screen and (max-width: 1680px) {
+	}
+
+/* Narrow */
+
+	@media screen and (max-width: 1280px) {	
+	}
+
+/* Narrower */
+
+	@media screen and (max-width: 1000px) {	
+		
+		.main.style3 p a.more {			
+			background-size: auto 83%;	
+		}
+		
+		.main.style3 p a.more:hover {
+			background-size: auto 83%;		
+		}
+		
+	}
+
+/* Mobile */
+
+	@media screen and (max-width: 736px) {	
+	
+		.main.style3 p a.more {			
+			background-size: auto 76%;	
+		}
+		
+		.main.style3 p a.more:hover {
+			background-size: auto 76%;		
+		}
+		
+	}
+	
+	
+	@media screen and (max-width: 480px) {	
+		
+		.main.style3 p a.more {			
+			background-size: auto 63%;	
+		}
+		
+		.main.style3 p a.more:hover {
+			background-size: auto 63%;		
+		}
+			
+	}

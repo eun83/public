@@ -50,7 +50,7 @@ input, label { vertical-align: middle; }
 .tab-wrap .user-form li span.txt-sign { width: 20px; text-align: center; }
 .tab-wrap .user-form li .input-tel input[type="tel"] { width:32%; }
 .tab-wrap .user-form li .input-tel input[type="tel"]:first-child { width: calc(36% - 45px); }
-.tab-wrap .user-form li .input-tel span.txt-sign { width:15px; }
+.tab-wrap .user-form li .input-tel span.txt-sign { width:14px; }
 .tab-wrap .user-form li span > span { display: inline-block; line-height: 1.5rem; }
 .tab-wrap .sub-txt { margin: 1rem; word-break: keep-all; position: relative; line-height: 1rem }
   /* 별표 아이콘 css */

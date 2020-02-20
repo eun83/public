@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* font face */
+/* @font-face {font-family:'Noto Sans KR'; font-style:normal; font-weight:300; src:url(/ols/fonts/ns_l.woff2) format('woff2'), url(/ols/fonts/ns_l.woff) format('woff')}
+@font-face {font-family:'Noto Sans KR'; font-style:normal; font-weight:400; src:url(/ols/fonts/ns_r.woff2) format('woff2'), url(/ols/fonts/ns_r.woff) format('woff')}
+@font-face {font-family:'Noto Sans KR'; font-style:normal; font-weight:500; src:url(/ols/fonts/ns_m.woff2) format('woff2'), url(/ols/fonts/ns_m.woff) format('woff')}
+@font-face {font-family:'Noto Sans KR'; font-style:normal; font-weight:700; src:url(/ols/fonts/ns_b.woff2) format('woff2'), url(/ols/fonts/ns_b.woff) format('woff')} */
+
+/* reset */
+*, *:before, *:after {box-sizing: border-box; -moz-box-sizing: border-box; image-rendering: -webkit-optimize-contrast;}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; font-size:100%; font:inherit;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+body {line-height:1;}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';	content:none;}
+table {border-collapse:collapse; border-spacing:0;}
+
+/* reset custermize */
+html {width:100%; height:100%; box-sizing:border-box;}
+body {width:100%; height:100%; font-family:'Noto Sans KR', 'NanumSquare', sans-serif; font-weight:400; overflow-x:hidden;}
+*, ::after, ::before {box-sizing:inherit;}
+a, a:focus, a:hover {text-decoration:none;}
+a, button {cursor:pointer;}
+input[type="text"], input[type="number"], input[type="password"], input[type="date"], textarea, select, input[type="checkbox"], input[type="radio"], label, input[type="submit"], input[type="image"], button {display:inline-block; margin:0; padding:0; /*font-family:'Noto Sans KR', 'NanumSquare', sans-serif;*/ font-weight:300; }
+input[type="text"], input[type="number"], input[type="password"], input[type="date"], textarea, select {width:100%; transition:border-color .15s ease-in-out, background-color .15s ease-in-out; border:1px solid rgba(0,0,0,0.16);}
+
+/* div vertical align middle */
+.d-va-m {font-size:0; line-height:0; text-align:center;}
+.d-va-m::before {display:inline-block; content:''; width:0; height:100%; vertical-align:middle;}
+.d-va-m > div {display:inline-block; vertical-align:middle;}
+
+/* hide */
+.hdn {position:absolute; left:0; top:0; width:0; height:0; overflow:hidden;}
+input.hdn {border:0; margin:0; padding:0; width:0; height:0; visibility:hidden;}
+
+/* responsive - show, hide */
+.dp-n {display:none;}

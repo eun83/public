@@ -35,7 +35,8 @@ input, label { vertical-align: middle; }
 .tab-wrap .agree-wrap .title strong { display: inline-block; margin-right: 5rem; word-break: keep-all; }
 .tab-wrap .agree-wrap .title label { position: absolute; right: 1rem; font-size: .75rem; line-height: .8125rem; color: #666; }
 .tab-wrap .agree-wrap .privacy-txt { padding: .75rem; border: 1px solid #ddd; border-width: 0 0 1px 0; background: #f9f9f9; line-height: 1.375rem; font-size: .75rem; height: 100px; overflow-y: auto; }
-.tab-wrap .agree-wrap .privacy-txt h4 { font-size: .875rem; font-weight: 400; margin-bottom: .5rem; }
+.tab-wrap .agree-wrap .privacy-txt h4 { font-size: .875rem; font-weight: 400; margin: 1.2rem 0 .5rem; }
+.tab-wrap .agree-wrap .privacy-txt h4:first-child { margin-top: .5rem; }
   /* tab - apply */
 .tab-wrap .user-form { border-top: 1px solid #444; }
 .tab-wrap .user-form li { border-bottom: 1px solid #ddd; padding: .75rem 1rem; }
@@ -67,7 +68,6 @@ input, label { vertical-align: middle; }
 .tab-wrap .btn-wrap a:active, 
 .tab-wrap .btn-wrap a:focus { background: green; }
   /* tab - result */
-.tab-con-02 { display: none; }
 .tab-wrap .result .user-form li b { color: #888; }
 .tab-wrap .result .user-form li span { color: #444; font-weight: 400; }
 /* footer */

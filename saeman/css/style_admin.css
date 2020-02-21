@@ -3,7 +3,7 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700|Roboto:400,900&display=swap');
 
-.admin-wrap { width: 100%; min-width: 1400px; font-size: 16px; font-weight: 300; }
+.admin-wrap { width: 100%; min-width: 1300px; font-size: 16px; font-weight: 300; }
 .admin-wrap a { color: #444; }
 .admin-wrap button, .admin-wrap .btn { padding: calc(.25rem - 2px) .5rem .25rem; border-radius: .2rem; border: 1px solid #ddd; background: #ddd; color: currentColor; font-size: .75rem; font-weight: 400; }
 .admin-wrap .btn { padding: .25rem .5rem calc(.25rem + 2px); }

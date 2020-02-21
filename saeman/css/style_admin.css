@@ -38,7 +38,7 @@
 .content .date-input input { width: 100px; }
 .content .btn-excel { text-align: right; padding: .5rem 0; }
 .content table { width: 100%; text-align: center; border: 1px solid #ddd; border-width: 1px 0 0 1px; font-size: .75rem; color: #444; }
-.content table tr:hover td { background: #fafafa; }
+.content table tr:hover td, .content table tr:active td, .content table tr:focus td { background: #fafafa; }
 .content table th, .content table td { border: 1px solid #ddd; border-width: 0 1px 1px 0; padding: .5rem; }
 .content table th { background: #f3f3f7; font-size: .875rem; font-weight: 400; color: #333; padding-top: .625rem; }
 .content .row-wrap { position: relative; }

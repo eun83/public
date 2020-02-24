@@ -3,10 +3,14 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700|Roboto:400,900&display=swap');
 
+a {color: #fff; text-decoration: none; outline: none}
+
+a:hover, a:active {text-decoration: none; color:#fff;}
+
+
 .admin-wrap { width: 100%; min-width: 1300px; font-size: 16px; font-weight: 300; }
 .admin-wrap a { color: #444; }
-.admin-wrap button, .admin-wrap .btn { padding: calc(.25rem - 2px) .5rem .25rem; border-radius: .2rem; border: 1px solid #ddd; background: #ddd; color: currentColor; font-size: .75rem; font-weight: 400; }
-.admin-wrap .btn { padding: .25rem .5rem calc(.25rem + 2px); }
+.admin-wrap button, .admin-wrap .btn { font-family: 'Malgun Gothic'; display: inline-block; line-height: 22px; vertical-align: middle; padding: 0 8px; border-radius: 3px; border: 1px solid #ddd; background: #ddd; color: currentColor; font-size: 12px; font-weight: 400; }
 .admin-wrap .cyan { border-color: lightseagreen; background:lightseagreen; color: #fff; }
 .admin-wrap .cyan:hover, .admin-wrap .cyan:active, .admin-wrap .cyan:focus { background:darkcyan; border-color: darkcyan; }
 .admin-wrap .orange { background: orange; border-color: orange; color: #fff; }
@@ -15,25 +19,25 @@
 .admin-wrap .gray:hover, .admin-wrap .gray:active, .admin-wrap .gray:focus { background:#111; border-color: #111; }
 
 .admin-wrap .layout-c { position: relative; width: 1200px; margin: 0 auto; } 
-.admin-wrap input { width: 150px; padding: .25rem; border-radius: .2rem; font-size: .75rem; }
-.admin-wrap select { width: auto; padding: calc(.25rem - 1px) .25rem; border-radius: .2rem; font-size: .75rem; }
+.admin-wrap input { width: 150px; padding: 4px; border-radius: 3px; font-size: 12px; }
+.admin-wrap select { width: auto; padding:3px 4px; border-radius: 3px; font-size: 12px; }
 .admin-wrap input[type="checkbox"] { width: auto }
 
-.header { background: #f3f3f4; padding: .5rem 0; }
+.header { background: #f3f3f4; padding: 8px 0; }
 .header h1 { position: relative; }
 .header h1 b { margin-left: 27px; }
   .icon-browser { color: #000; position: absolute; margin-left: 2px; width: 15px; height: 15px; border-radius: 50%; border: solid 1px currentColor; background-color: currentColor; vertical-align: middle; }
   .icon-browser:before { content: ''; position: absolute; left: 1px; top: 1px; width: 11px; height: 11px; border-radius: 85% 15%; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); color: white; border: solid 1px currentColor; }
   .icon-browser:after { content: ''; position: absolute; top: 6px; left: -1px; width: 15px; height: 1px; color: white; background-color: currentColor; }
-.header p { position: absolute; right: 0; top: 0; line-height: 20px; font-size: .825rem; }
+.header p { position: absolute; right: 0; top: 0; line-height: 20px; font-size: 14px; }
 .header p i { color: teal; font-weight: 400; }
 
-.content { padding: 1.25rem 0; }
-.content h2 { position: relative; margin-bottom: 2rem; }
-.content h2 b { margin-left: 27px; font-size: 1.25rem; }
+.content { padding: 20px 0; }
+.content h2 { position: relative; margin-bottom: 32px; }
+.content h2 b { margin-left: 27px; font-size: 20px; }
   .icon-profile { color: #000; position: absolute; margin-left: 3px; margin-top: 11px; width: 14px; height: 6px; border-left: solid 1px currentColor; border-right: solid 1px currentColor; border-top: solid 1px currentColor; border-bottom: solid 1px transparent; border-radius: 6px 6px 0 0; }
   .icon-profile:before { content: ''; position: absolute; left: 2px; top: -10px; width: 8px; height: 8px; border-radius: 50%; border: solid 1px currentColor; }
-.content .option-wrap { position: relative; padding: .5rem 0; }
+.content .option-wrap { position: relative; padding: 8px 0; }
 .content .option-wrap > * { display: inline-block; vertical-align: middle; }
 .content .date-input input { width: 110px; }
 .content .date-input > div { display: inline-block; position: relative; color: #777; }
@@ -44,19 +48,19 @@
   .icon-calendar:after { left: -1px; top: 3px; width: 16px; height: 1px; background-color: currentColor; }
   .icon-calendar i { display: inline-block; position: absolute; left: 2px; top: 6px; }
   .icon-calendar i:before { width: 10px; height: 3px; border-top: solid 1px currentColor; border-bottom: solid 1px currentColor; } 
-.content .btn-excel { text-align: right; padding: .5rem 0; }
-.content table { width: 100%; text-align: center; border: 1px solid #ddd; border-width: 1px 0 0 1px; font-size: .75rem; color: #444; }
+.content .btn-excel { text-align: right; padding: 8px 0; }
+.content table { width: 100%; text-align: center; border: 1px solid #ddd; border-width: 1px 0 0 1px; font-size: 12px; color: #444; }
 .content table tr:hover td, .content table tr:active td, .content table tr:focus td { background: #fafafa; }
-.content table th, .content table td { border: 1px solid #ddd; border-width: 0 1px 1px 0; padding: .5rem; }
-.content table th { background: #f3f3f7; font-size: .875rem; font-weight: 400; color: #333; padding-top: .625rem; }
+.content table th, .content table td { border: 1px solid #ddd; border-width: 0 1px 1px 0; padding: 8px; }
+.content table th { background: #f3f3f7; font-size: 14px; font-weight: 400; color: #333; padding-top: 10px; }
 .content .row-wrap { position: relative; }
 .content .row-wrap .btn-action { position: absolute; }
-.content .row-wrap .btn-action button { font-size: .8125rem; }
-.content .paging { text-align: center; margin: 1.5rem 0; }
-.content .paging a { display: inline-block; border: 1px solid #ddd; width: 2rem; line-height: 28px; border-radius: .2rem; font-size: .75rem; vertical-align: middle; }
+.content .row-wrap .btn-action button { font-size: 13px; line-height: 24px; }
+.content .paging { text-align: center; margin: 24px 0; }
+.content .paging a { display: inline-block; border: 1px solid #ddd; width: 32px; line-height: 28px; border-radius: 3px; font-size: 12px; vertical-align: middle; }
 .content .paging a:hover, .content .paging a:active, .content .paging a:focus, .content .paging a.on { color: #fff; background: mediumturquoise; border-color: mediumturquoise; }
 .content .paging a.on { background: cadetblue; border-color: cadetblue; }
-.content .arrow-wrap { margin: 0 .5rem; }
+.content .arrow-wrap { margin: 0 8px; }
 .content .arrow-wrap > a { position: relative; height: 30px; }
   .icon-arrow { position: absolute; left: calc(50% - 2px); top: calc(50% - 4px); width: 8px; height: 8px; border-top: solid 1px currentColor; border-right: solid 1px currentColor; }
   .icon-arrow.arrow2 { left: calc(50% - 4px); top: calc(50% - 4px); }
@@ -67,8 +71,9 @@
 
 .content.view table { text-align: left; }
 .content.view table th { width: 20%; height: 41px; }
-.content.view table th, .view table td { padding-left: 1.5rem; }
+.content.view table th, .view table td { padding-left: 24px; }
 .content.view table input { width: 200px; }
 .content.view table td span { margin: 0 5px; color: #777; }
 .content.view table td span:first-child { margin-left: 0; }
-.content.view .row-wrap { text-align: right; margin-top: 3rem; }
+.content.view .row-wrap { text-align: right; margin-top: 48px; }
+.content.view .row-wrap button, .content.view .row-wrap a { font-size: 13px; line-height: 24px; }

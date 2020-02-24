@@ -3,14 +3,9 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700|Roboto:400,900&display=swap');
 
-a {color: #fff; text-decoration: none; outline: none}
-
-a:hover, a:active {text-decoration: none; color:#fff;}
-
-
 .admin-wrap { width: 100%; min-width: 1300px; font-size: 16px; font-weight: 300; }
 .admin-wrap a { color: #444; }
-.admin-wrap button, .admin-wrap .btn { font-family: 'Malgun Gothic'; display: inline-block; line-height: 22px; vertical-align: middle; padding: 0 8px; border-radius: 3px; border: 1px solid #ddd; background: #ddd; color: currentColor; font-size: 12px; font-weight: 400; }
+.admin-wrap button { padding: 2px 8px 4px; border-radius: 3px; border: 1px solid #ddd; background: #ddd; color: currentColor; font-size: 12px; font-weight: 400; }
 .admin-wrap .cyan { border-color: lightseagreen; background:lightseagreen; color: #fff; }
 .admin-wrap .cyan:hover, .admin-wrap .cyan:active, .admin-wrap .cyan:focus { background:darkcyan; border-color: darkcyan; }
 .admin-wrap .orange { background: orange; border-color: orange; color: #fff; }
@@ -53,9 +48,10 @@ a:hover, a:active {text-decoration: none; color:#fff;}
 .content table tr:hover td, .content table tr:active td, .content table tr:focus td { background: #fafafa; }
 .content table th, .content table td { border: 1px solid #ddd; border-width: 0 1px 1px 0; padding: 8px; }
 .content table th { background: #f3f3f7; font-size: 14px; font-weight: 400; color: #333; padding-top: 10px; }
+.content table td button:first-child { margin-right: 2px; }}
 .content .row-wrap { position: relative; }
 .content .row-wrap .btn-action { position: absolute; }
-.content .row-wrap .btn-action button { font-size: 13px; line-height: 24px; }
+.content .row-wrap .btn-action button { font-size: 13px; }
 .content .paging { text-align: center; margin: 24px 0; }
 .content .paging a { display: inline-block; border: 1px solid #ddd; width: 32px; line-height: 28px; border-radius: 3px; font-size: 12px; vertical-align: middle; }
 .content .paging a:hover, .content .paging a:active, .content .paging a:focus, .content .paging a.on { color: #fff; background: mediumturquoise; border-color: mediumturquoise; }
@@ -76,4 +72,4 @@ a:hover, a:active {text-decoration: none; color:#fff;}
 .content.view table td span { margin: 0 5px; color: #777; }
 .content.view table td span:first-child { margin-left: 0; }
 .content.view .row-wrap { text-align: right; margin-top: 48px; }
-.content.view .row-wrap button, .content.view .row-wrap a { font-size: 13px; line-height: 24px; }
+.content.view .row-wrap button, .content.view .row-wrap a { font-size: 13px; }

@@ -52,8 +52,9 @@ input, label { vertical-align: middle; }
 .tab-wrap .user-form li .input-tel input[type="tel"] { width:32%; }
 .tab-wrap .user-form li .input-tel input[type="tel"]:first-child { width: calc(36% - 45px); }
 .tab-wrap .user-form li .input-tel span.txt-sign { width:14px; }
-.tab-wrap .user-form li .input-two input { width: 70%; }
-.tab-wrap .user-form li .input-two input:first-child { width: calc(30% - 4px); }
+.tab-wrap .user-form li .input-tel-2 input { width: 70%; }
+.tab-wrap .user-form li .input-tel-2 input:first-child { width: calc(30% - 5px); }
+.tab-wrap .user-form li .input-tel-2 input::placeholder { color: #aaa; }
 
 .tab-wrap .user-form li span > span { display: inline-block; line-height: 1.5rem; }
 .tab-wrap .sub-txt { margin: 1rem; word-break: keep-all; position: relative; line-height: 1rem }
@@ -100,6 +101,8 @@ input, label { vertical-align: middle; }
   .tab-wrap .user-form li .input-email select { width: 25%; margin: 0 0 0 .5rem; vertical-align: middle; padding: calc(.375rem - 1px) calc(.5rem - 1px); }
   .tab-wrap .user-form li .input-tel input[type="tel"] { width:21%; }
   .tab-wrap .user-form li .input-tel input[type="tel"]:first-child { width: 21%; }
+  .tab-wrap .user-form li .input-tel-2 input { width: 50%; }
+  .tab-wrap .user-form li .input-tel-2 input:first-child { width: calc(20% - 5px); }
   .tab-wrap .result .user-form li b { color: #444; }
   .tab-wrap .lookup { min-height: 550px; }
 }
@@ -132,5 +135,7 @@ input, label { vertical-align: middle; }
   .tab-wrap .user-form li .input-email input { width: 15%; }
   .tab-wrap .user-form li .input-email select { width: 18%; }
   .tab-wrap .user-form li .input-tel input[type="tel"] { width:16%; }
-  .tab-wrap .user-form li .input-tel input[type="tel"]:first-child { width: 14%; }  
+  .tab-wrap .user-form li .input-tel input[type="tel"]:first-child { width: 14%; }
+  .tab-wrap .user-form li .input-tel-2 input { width: 35%; }
+  .tab-wrap .user-form li .input-tel-2 input:first-child { width: calc(15% - 5px); }
 }

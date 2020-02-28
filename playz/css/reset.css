@@ -183,6 +183,13 @@ mark {
   height:0; 
   content:'';
 }
+/* float */
+.fl {
+  float:left !important;
+}
+.fr {
+  float:right !important;
+}
 /* text-align */
 .al {
   text-align:left !important;
@@ -192,13 +199,6 @@ mark {
 }
 .ar {
   text-align:right !important;
-}
-/* float */
-.fl {
-  float:left !important;
-}
-.fr {
-  float:right !important;
 }
 /* div vertical align middle */
 .d-va-m {

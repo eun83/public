@@ -1,8 +1,8 @@
 $(function(){
-  $('.sns').mouseenter(function(){
-    $('.store').show();
+  $(".menu>li").mouseover(function(){
+      $(this).children("ul").stop().slideDown(200);
   });
-  $('.sns').mouseleave(function(){
-    $('.store').hide();
+  $(".menu>li").mouseleave(function(){
+      $(this).children("ul").stop().slideUp(200);
   });
 });

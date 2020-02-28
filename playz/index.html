@@ -30,7 +30,10 @@
 <body>
   <div class="playz">
     <div class="wrap">
-      <div class="header">
+      <div class="header mobile">
+
+      </div>
+      <div class="header web">
         <div class="top-menu">
           <div class="login">
             <div class="swap">
@@ -65,46 +68,50 @@
         </div>
         <div class="gnb">
           <div class="logo">
-            <h1>PLAYZ</h1>
-            <div class="yz"></div>
+            <h1><span class="hide">PLAYZ</span></h1>
           </div>
-          <ul class="menu">
+          <div class="yz"></div>
+          <ul class="menu clearfix">
             <li>
               <a href="#">BRAND</a>
               <ul>
-                <li>브랜드스토리</li>
-                <li>연혁</li>
-                <li>PLAYZ PLAY-LAB</li>
+                <li><a href="">브랜드 스토리</a></li>
+                <li><a href="">연혁</a></li>
+                <li><a href="">PLAYZ PLAY-LAB</a></li>
               </ul>
             </li>
             <li>
               <a href="#">THEME PARK</a>
               <ul>
-                <li>PLAYZ PARK</li>
-                <li>PLAYZ LOUNGE</li>
+                <li><a href="#">PLAYZ PARK</a></li>
+                <li><a href="#">PLAYZ LOUNGE</a></li>
               </ul>
             </li>
             <li>
               <a href="#">PARTY</a>
               <ul>
-                <li></li>
-                <li></li>
-              </ul>
+                <li><a href="#">파티<br>이용요금</a></li>
+                <li><a href="#">파티<br>이용안내</a></li>
+                <li><a href="#">데코<br>레이션</a></li>
+                <li><a href="#">파티<br>예약하기</a></li>
+              </ul> 
             </li>
             <li>
               <a href="#">NEW & EVENT</a>
               <ul>
-                <li>공지사항</li>
-                <li>이벤트</li>
-                <li>플레이즈 새소식</li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">플레이즈 새소식</a></li>
               </ul>
             </li>
             <li>
               <a href="#">우리아이 발달정보</a>
+              <!-- 
               <ul>
-                <li></li>
-                <li></li>
-              </ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul> 
+              -->
             </li>
           </ul>
         </div>      
@@ -123,15 +130,20 @@
       <div class="footer">
         <div class="ft-col">
           <div class="link">
-            <a href="#">인스타</a>
-            <a href="#">MAP</a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+              <span class="hide">인스타</span>
+            </a>
+            <a href="#">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="hide">MAP</span>
+            </a>
           </div>
           <div class="txt">
-            <p>
-              <span>대표이사 : 최정대</span>
-              <span>사업자등록번호 720-87-00804</span> 
+            <p class="ko-txt">
+              <b>대표이사 : 최정대</b>사업자등록번호 <span class="inline">720-87-00804</span> 
             </p>           
-            <p>Copyright Ⓒ 2019 by PLAYZ EDUTAINMENT</p>
+            <p><span>Copyright&#169;2019 by PLAYZ EDUTAINMENT</span></p>
           </div>
         </div>
         <div class="ft-col">

@@ -1,8 +1,35 @@
 @charset "utf-8";
 @import url(layout.css);
 
-.content { position: relative; }
+.content { position: relative; background: #fff; }
 .mov-bg video { width: 100%; }
+
+.content-area { padding: 3rem 7rem; }
+
+/* play-lab */
+.grid-box { position: relative; }
+.grid-box:after { content: ''; display: block; clear: both; }
+.g-item { width: 33%; float: left; margin: 0 0 1px 1px; position: relative; }
+.g-item .item-box { display: block; width: 100%; }
+.g-item .item-box img { width: 100%; }
+.g-item .img-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.8); transform: scale(.9); -webkit-transform: scale(.9); transition: all .3s ease; -webkit-transition: all .3s ease; opacity: 0; }
+.g-item .item-box:hover .img-overlay { transform: scale(1); -webkit-transform: scale(1); opacity: 1; }
+.g-item .img-overlay p { position: absolute; top: 50%; transform: translateY(-50%); margin: 0 1rem; color: #fff; font-size: .9375rem; font-weight: 100; text-align: center; line-height: 1.25rem; }
+.first-item .img-overlay { background-image: url(../img/img_grid-over.png); background-size: cover; background-position: bottom right; }
+.first-item .img-overlay p { top: 1.5rem; left: 0; transform: none; margin: 0 3rem 0 1rem; text-align: left; }
+.first-item .img-overlay a { position: absolute; bottom: 4.5rem; right: 1rem; color: #fff; font-size: .875rem; }
+  i.arrow { color: #fff; display: block; position: absolute; margin-left: calc( 50% - 20px ); margin-top: 15px; width: 25px; height: 25px; border: solid 3px currentColor; border-radius: 15px; }
+  i.arrow:before { content: ''; position: absolute; margin-top: 6px; margin-left: 4px; width: 10px; height: 10px; border-top: solid 3px currentColor; border-right: solid 3px currentColor; border-radius: 2px; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.last-item img { opacity: 0; }
+.last-item .img-overlay { opacity: 1; transform: scale(1); -webkit-transform: scale(1); }
+.last-item .img-overlay p { width: calc( 100% - 2rem ); font-size: 1.5rem; font-family: 'Quicksand'; font-weight: 700; text-align: center; letter-spacing: .25rem; line-height: 2rem; }
+.last-item .img-overlay p span { display: block; }
+
+
+
+
+
+
 
 @media (max-width: 1200px) {
 }
@@ -11,7 +38,19 @@
 }
 
 @media (max-width: 768px) {
+
+  /* play-lab */
+  .g-item { width: calc( 50% - 2px ); }
+
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) {  
+  /* play-lab */
+  .g-item { width: 100%; margin: 0 0 1px 0; }
+}
+
+@media (max-width: 375px) {
+  
+  
+
 }

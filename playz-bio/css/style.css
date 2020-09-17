@@ -75,7 +75,7 @@
 .playz-bio table { width: 100%; }
 .playz-bio table th, table td { padding: .875rem 0; text-align: center; }
 .playz-bio table { box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3); border-radius: 10px; }
-.playz-bio table thead th { background-color: #ffd701; font-size: 1rem; color: #222; font-family: 'Noto Sans KR', sans-serif; }
+.playz-bio table thead th { background-color: #ffd701; font-size: .875rem; color: #222; font-family: 'Noto Sans KR', sans-serif; }
 .playz-bio table tbody tr:nth-child(2n){background-color: #f4f4f4;}
   .playz-bio .table-type1 thead th {border-radius: 10px 10px 0 0; }
   .playz-bio .table-type1 tbody th { width: 30%; border-right: 1px solid #e5e5e5; }
@@ -192,6 +192,7 @@
 
   .playz-bio .content { padding: 1.25rem 3.5rem; }
   .playz-bio .progress-bar .ani { padding: .25rem 1.5rem; }
+  .playz-bio table thead th { font-size: 1rem; }
   .playz-bio .section-img img { padding: 2rem 3rem; }
 
 }

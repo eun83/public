@@ -151,10 +151,10 @@
               <source src="https://ssproxy2.ucloudbiz.olleh.com/v1/AUTH_0ba725f15ae74248911f4d91e2276a32/vg-contents/app/design/resource/main.mp4" type="video/mp4">
             </video>
           </div>
-          <div id="tab_2" class="">
-            <video controls> 
+          <div id="tab_2" class="no-video">
+            <!-- <video controls> 
               <source src="https://ssproxy2.ucloudbiz.olleh.com/v1/AUTH_0ba725f15ae74248911f4d91e2276a32/vg-contents/app/design/resource/main.mp4" type="video/mp4">
-            </video>
+            </video> -->
           </div>
           <div id="tab_3" class="">
             <video controls> 
@@ -231,6 +231,7 @@
 <script type="text/javascript" src="js/lib/slider-pro/js/jquery.sliderPro.min.js"></script>
 <script type="text/javascript">
   $( document ).ready(function( $ ) {
+    //slider pro
     $( '#bio-slider' ).sliderPro({
       width: 800,
       height: 350,
@@ -250,6 +251,7 @@
       }
     });
 
+    //tab
     $('ul.tabs > li').click(function(){
       var tab_id = $(this).attr('data-tab');
 

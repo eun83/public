@@ -62,7 +62,10 @@
 .playz-bio .tabs li:focus { background: #e8e8e8; color: #666; }
 .playz-bio .tabs li.current { background: #ffd701; color: #222; font-weight: 700; }
 .playz-bio .tab-content > div { display: none; }
+.playz-bio .tab-content > .no-video { background: #f8f8f8; border-radius: 10px; text-align: center; }
+.playz-bio .tab-content > .no-video::before { content: 'No video'; display: block; padding: calc(310 / 800 * 50%) 0; font-weight: 900; color: #ccc;  }
 .playz-bio .tab-content > .current { display: block; }
+
 
 /* footer */
 .playz-bio .footer { padding: 1.5rem 0 2.5rem; }

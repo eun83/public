@@ -139,9 +139,34 @@
       </div>      
       <div class="section-video ">
         <h3>체험영상</h3>
-        <video controls> 
-          <source src="https://ssproxy2.ucloudbiz.olleh.com/v1/AUTH_0ba725f15ae74248911f4d91e2276a32/vg-contents/app/design/resource/main.mp4" type="video/mp4">
-        </video>
+        <ul class="tabs">
+          <li data-tab="tab_1" class="current">기구1</li>
+          <li data-tab="tab_2">기구2</li>
+          <li data-tab="tab_3">기구3</li>
+          <li data-tab="tab_4">기구4</li>
+        </ul>
+        <div class="tab-content">
+          <div id="tab_1" class="current">
+            <video controls> 
+              <source src="https://ssproxy2.ucloudbiz.olleh.com/v1/AUTH_0ba725f15ae74248911f4d91e2276a32/vg-contents/app/design/resource/main.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div id="tab_2" class="">
+            <video controls> 
+              <source src="https://ssproxy2.ucloudbiz.olleh.com/v1/AUTH_0ba725f15ae74248911f4d91e2276a32/vg-contents/app/design/resource/main.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div id="tab_3" class="">
+            <video controls> 
+              <source src="https://ssproxy2.ucloudbiz.olleh.com/v1/AUTH_0ba725f15ae74248911f4d91e2276a32/vg-contents/app/design/resource/main.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div id="tab_4" class="">
+            <video controls> 
+              <source src="https://ssproxy2.ucloudbiz.olleh.com/v1/AUTH_0ba725f15ae74248911f4d91e2276a32/vg-contents/app/design/resource/main.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
       </div>
       <div class="section-slider">
         <h3>체험사진</h3>
@@ -224,7 +249,20 @@
         }
       }
     });
+
+    $('ul.tabs > li').click(function(){
+      var tab_id = $(this).attr('data-tab');
+
+      $('ul.tabs > li').removeClass('current');
+      $('.tab-content > div').removeClass('current');
+
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    });
+
   });
+
+
 </script>
 
 </html>

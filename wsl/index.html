@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WSL Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/2ecd35ced8.js" crossorigin="anonymous"></script>
+  <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin:0;
+      padding:0;
+      border:0; 
+      font-size:100%;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: 'Montserrat', sans-serif; 
+      overflow: hidden;
+    }    
+
+    .text-line text {
+      
+      font-family: 'Montserrat', sans-serif; 
+      font-style: normal;
+      font-weight: 900;
+      
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1000;
+      animation: dash 10s linear forwards;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes filling {
+      from {
+        fill: none;
+        fill-opacity: 0;
+      }
+      to {
+        fill: none;
+        fill-opacity: 1;
+      }
+    }
+
+    .txtline-wrap { position: relative; }
+    .txtline-wrap .text-line { position: absolute; width: 100vw; z-index: 0; margin-top: 21vh; }
+
+    .wsl-wrap { position: relative; z-index: 1; width: 100%; }
+    .wsl-txt { padding: 20vh 5vw 0; }
+    .wsl-txt p:first-child { font-size: 1rem; }
+    .wsl-txt p:first-child span:nth-child(2) { font-size: 1.5rem; margin-bottom: 1.25rem; }
+    .wsl-txt p span img { width: 100px; }
+    .wsl-txt p span { display: block; font-weight: 700; }
+    .wsl-txt p:first-child:after { content: ''; display: block; position: absolute; margin-top: 4vh; width: 12px; height: 12px; background-color: #e31c79; border-radius: 50%; }
+    .wsl-txt p:nth-child(2) { font-size: 1rem; line-height: 1.25rem; margin-top: 10vh; }
+    .wsl-txt p:nth-child(2) span { font-family: 'Noto Sans KR', sans-serif; font-weight: 300; }
+    .wsl-sns { margin-top: 5vh; font-size: 0; }
+    .wsl-sns li { display: inline-block; background: #bbb; border-radius: 50%; width: 40px; height: 40px; line-height: 40px; margin-right: 1rem; font-size: 1.375rem; vertical-align: middle; text-align: center; cursor: pointer; }
+    /* .wsl-sns li:link, .wsl-sns li:visited, .wsl-sns li:hover, .wsl-sns li:active, .wsl-sns li:focus { background: #003594; } */
+    .wsl-sns li:nth-child(1) { background: #d4272c; }
+    .wsl-sns li:nth-child(2) { background: #3b5b9b; }
+    .wsl-sns li:nth-child(3) { 
+                               background: #833ab4;  /* fallback for old browsers */
+                               background: -webkit-linear-gradient(45deg, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+                               background: linear-gradient(45deg, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    }
+    .wsl-sns li:nth-child(4) { background: #28a8df; }
+    .wsl-sns li a i { color: #fff; }
+    .wsl-sns li a span { overflow: hidden; display: inline-block; position: absolute; border: 0; margin: -1px; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); }
+    .wsl-copy { position: fixed; bottom: 2vh; padding: 0 5vw; color: #ccc; font-size: .6875rem; font-weight: 300; }
+
+@media (min-width: 576px) {
+  .wsl-txt p:first-child { font-size: 1.5rem; }
+  .wsl-txt p:first-child span:nth-child(2) { font-size: 2.5rem; margin: .5rem 0 2.5rem; }
+  .wsl-txt p span img { width: 170px; }
+  .wsl-txt p:first-child:after { width: 18px; height: 18px; }
+  .wsl-txt p:nth-child(2) { font-size: 1.25rem; line-height: 1.75rem; }
+  .wsl-sns li { width: 50px; height: 50px; line-height: 50px; margin-right: 1.5rem; font-size: 1.5rem; }
+  .wsl-copy { bottom: 3vh; font-size: 1rem; }
+}
+
+@media (min-width: 768px) {
+  .wsl-txt { padding: 19vh 5vw 0; }
+  .wsl-txt p:first-child { font-size: 2rem; }
+  .wsl-txt p:first-child span:nth-child(2) { font-size: 3.5rem; margin: .75rem 0 3rem; }
+  .wsl-txt p span img { width: 200px; }
+  .wsl-txt p:first-child:after { width: 20px; height: 20px; }
+  .wsl-txt p:nth-child(2) { font-size: 1.5rem; line-height: 2rem; }
+  .wsl-sns li { width: 60px; height: 60px; line-height: 60px; margin-right: 2rem; font-size: 1.75rem; }
+  .wsl-copy { bottom: 3vh; }
+}
+
+@media (min-width: 1024px) {
+  .wsl-txt { padding: 22vh 5vw 0; }
+}
+
+@media (min-width: 1200px) {
+  .txtline-wrap .text-line { margin-top: 6vh; }
+  .wsl-wrap { max-width: 1100px; min-height: 90vh; margin: 0 auto; }
+  .wsl-copy { width: 100vw; padding: 0; position: static; }
+  .wsl-copy p { width: 1100px; margin: 0 auto; }
+
+  .wsl-txt { padding: 18vh 0 0; }
+  .wsl-txt p:first-child { font-size: 2.5rem; }
+  .wsl-txt p:first-child span:nth-child(2) { font-size: 5rem; margin: .75rem 0 3.5rem; }
+  .wsl-txt p span img { width: 220px; }
+  .wsl-txt p:first-child:after { margin-top: 5vh; }
+  .wsl-txt p:nth-child(2) { font-size: 1.5rem; line-height: 2.125rem; margin-top: 12vh; }
+  .wsl-sns { float: right; margin-top: -4.125rem; }
+  .wsl-sns li:hover, .wsl-sns li:active, .wsl-sns li:focus { line-height: 50px; }
+  
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="txtline-wrap">
+    <svg viewBox="0 0 1920 1000" stroke="#aaa" stroke-width="1" class="text-line">
+      <text x="25" y="250" fill="none" font-size="260">Coming Soon</text>
+    </svg>
+  </div>
+  <div class="wsl-wrap">
+    <div class="wsl-txt">
+      <div class="txt">
+        <p>
+          <span><img src="wsl-logo.png" alt="WSL Logo"></span>
+          <span>Esports You Making! </span>
+          <span>2021 World Super League</span>
+        </p>
+        <p>
+          <span>지금은 WSL 홈페이지 준비중입니다.</span>
+          <span>SNS로 먼저 만나보세요!</span>
+        </p>
+      </div>
+      <ul class="wsl-sns">
+        <li><a href=""><i class="fab fa-youtube"></i><span>youtube</span></a></li>
+        <li><a href=""><i class="fab fa-facebook-f"></i><span>facebook</span></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i><span>insta</span></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i><span>twitter</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wsl-copy">
+    <p>Copyright 2020 © All rights reserved by Techno blood Inc.</p>
+  </div>
+</body>
+</html>
